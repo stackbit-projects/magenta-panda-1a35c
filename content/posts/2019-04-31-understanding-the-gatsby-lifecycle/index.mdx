@@ -7,7 +7,6 @@ excerpt: Exploring the hidden histories of cities using augmented reality.
 canonical_url: www.exampleurl.com
 slug: Understanding travel with AR
 ---
-
 Hello, world! This is a demo post for `gatsby-theme-novela`. Novela is built by the team at [Narative](https://narative.co), and built for everyone that loves the web.
 
 In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere.
@@ -166,7 +165,7 @@ Gatsby requires Node to be installed to run the Bootstrap and Build sequences. U
 
 ### Step 1
 
-During the Bootstrap sequence, which occurs every time you run \$ gatsby develop, there are about 20 events that fire ranging from validating your gatsby-config.js to building the data schemas and pages for your site. For example, the Bootstrap sequence is where Gatsby will create pages. If you want an in depth look of all 20 Bootstrap steps Swyx shared a fantastic Gist that goes into more detail.
+During the Bootstrap sequence, which occurs every time you run $ gatsby develop, there are about 20 events that fire ranging from validating your gatsby-config.js to building the data schemas and pages for your site. For example, the Bootstrap sequence is where Gatsby will create pages. If you want an in depth look of all 20 Bootstrap steps Swyx shared a fantastic Gist that goes into more detail.
 
 ### Step 2
 
@@ -178,12 +177,12 @@ And finally, once the generated files are deployed, Gatsby lives in the browser.
 
 What’s important to remember is that Gatsby’s lifecycle can be aggregated into 3 main sequences:
 
-- Bootstrap
-- Build
-- Browser
-- These three sequences makeup the Gatsby lifecycle.
+*   Bootstrap
+*   Build
+*   Browser
+*   These three sequences makeup the Gatsby lifecycle.
 
----
+***
 
 ## What are the Gatsby specific files for?
 
@@ -221,11 +220,11 @@ From experience, most of my time has revolved around handling data and building 
 
 ### Examples of gatsby-node.js hooks:
 
-- createPages
-- onCreateBabelConfig
-- onCreateWebpackConfig
-- onPostBuild
-- gatsby-ssr.js
+*   createPages
+*   onCreateBabelConfig
+*   onCreateWebpackConfig
+*   onPostBuild
+*   gatsby-ssr.js
 
 When you think Server Side Rendering you think of a server that takes in requests and dynamically builds pages and sends it to the client. Gatsby doesn’t do that, but it does server side render — it generates all the pages during build time.
 
@@ -233,10 +232,10 @@ Naturally, gatsby-ssr.js allows developers to hook into that lifecycle. In my ex
 
 ### Examples of gatsby-ssr.js hooks:
 
-- onPreRenderHTML
-- onRenderBody
-- replaceRenderer
-- gatsby-browser.js
+*   onPreRenderHTML
+*   onRenderBody
+*   replaceRenderer
+*   gatsby-browser.js
 
 Gatsby is a static site that loads a dynamic application after initial load, which means you get the benefits of a static site in a web application. gatsby-browser.js provides convenient hooks to deal with app loading, route updates, service worker updates, scroll positioning, and more.
 
@@ -244,11 +243,11 @@ Everything that occurs after your static site has loaded can be hooked in gatsby
 
 ### Examples of gatsby-browser.js hooks:
 
-- onClientEntry
-- onRouteUpdate
-- onServiceWorkerInstalled
-- registerServiceWorker
-- shouldUpdateScroll
+*   onClientEntry
+*   onRouteUpdate
+*   onServiceWorkerInstalled
+*   registerServiceWorker
+*   shouldUpdateScroll
 
 ## Conclusion
 
