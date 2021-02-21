@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     siteMetadata: {
-        title: `Novela by Narative`,
+        title: `Rui Jie Wang`,
         name: `Narative`,
         siteUrl: `https://gatsby-theme-novela.netlify.com`,
         description: `This is my description that will be used in the meta tags and important for search results`,
